@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.angcyo.bitmaploaddemo.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:scaleType="center" />
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/img2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3" />
+
+    <com.angcyo.bitmaploaddemo.LargeImageView
+        android:id="@+id/img3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+</android.support.v7.widget.LinearLayoutCompat>
